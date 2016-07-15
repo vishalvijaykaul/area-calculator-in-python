@@ -1,0 +1,47 @@
+from time import sleep
+from math import pi
+
+print "Calculator is Starting...."
+sleep(1)
+
+selection=raw_input("Enter T for Triangle or C for Circle or R for rectangle or S for Square :")
+selection=selection.upper()
+
+if selection =="T":
+    print "You have selected the shape Triangle"
+    base=float(raw_input("Enter value for base: "))
+    height=float(raw_input("Enter value for height: "))
+    print "Calculating....."
+    sleep(1)
+    area= 0.5*base*height
+    print "Area of the Triangle is: ",area
+    
+elif selection =="C":
+    print "You have selected the shape Circle"
+    radius=float(raw_input("Enter value for radius: "))
+    print "Calculating....."
+    sleep(1)
+    area=pi*radius**2
+    print "Area of the Circle is: ",area
+    
+elif selection =="S":
+    print "You have selected the shape Square"
+    side=float(raw_input("Enter value for side: "))
+    print "Calculating....."
+    area=side**2
+    sleep(1)
+    print "Area of the square is: ",area
+    
+elif selection=="R":
+    print "You have selected the shape Rectangle"
+    length=float(raw_input("Enter length value: "))
+    breadth=float(raw_input("Enter breadth value: "))
+    area=length*breadth
+    print "Calculating....."
+    sleep(1)
+    print "Area of Rectangle is: ",area
+    
+else:
+    print "Garbage Entry....Please make a selection from the given choices only!...program will now exit!!!"
+    exit()
+    
