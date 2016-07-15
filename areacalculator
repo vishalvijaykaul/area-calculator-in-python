@@ -9,6 +9,7 @@ selection=selection.upper()
 
 if selection =="T":
     print "You have selected the shape Triangle"
+    sleep(1)
     base=float(raw_input("Enter value for base: "))
     height=float(raw_input("Enter value for height: "))
     print "Calculating....."
@@ -18,6 +19,7 @@ if selection =="T":
     
 elif selection =="C":
     print "You have selected the shape Circle"
+    sleep(1)
     radius=float(raw_input("Enter value for radius: "))
     print "Calculating....."
     sleep(1)
@@ -26,6 +28,7 @@ elif selection =="C":
     
 elif selection =="S":
     print "You have selected the shape Square"
+    sleep(1)
     side=float(raw_input("Enter value for side: "))
     print "Calculating....."
     area=side**2
@@ -34,6 +37,7 @@ elif selection =="S":
     
 elif selection=="R":
     print "You have selected the shape Rectangle"
+    sleep(1)
     length=float(raw_input("Enter length value: "))
     breadth=float(raw_input("Enter breadth value: "))
     area=length*breadth
