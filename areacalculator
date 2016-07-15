@@ -1,16 +1,22 @@
-from time import sleep
-from math import pi
+""" Area Calculator for the Shapes
+Rectangle,Square,Triangle and Circle"
+
+
+# importing for use later in calculation
+
+from time import sleep #for relaistic replication like a calculator
+from math import pi # for calculation of area of circle
 
 print "Calculator is Starting...."
 sleep(1)
 
 selection=raw_input("Enter T for Triangle or C for Circle or R for rectangle or S for Square :")
-selection=selection.upper()
+selection=selection.upper() # for handling case of letters entered
 
 if selection =="T":
     print "You have selected the shape Triangle"
     sleep(1)
-    base=float(raw_input("Enter value for base: "))
+    base=float(raw_input("Enter value for base: "))  # converting to float type in order to carry out calculations
     height=float(raw_input("Enter value for height: "))
     print "Calculating....."
     sleep(1)
@@ -45,6 +51,7 @@ elif selection=="R":
     sleep(1)
     print "Area of Rectangle is: ",area
     
+# for handling all other entries (otherthan the specified ones available for selection)
 else:
     print "Garbage Entry....Please make a selection from the given choices only!...program will now exit!!!"
     exit()
